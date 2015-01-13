@@ -5,7 +5,7 @@
  * Date: 17.11.2014
  * Time: 14:12
  */
-namespace samson\fs;
+namespace samsonphp\fs;
 
 use Aws\S3\S3Client;
 use Aws\Common\Credentials\Credentials;

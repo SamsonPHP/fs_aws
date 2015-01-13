@@ -24,7 +24,7 @@ class FileServiceConfig extends \samson\core\Config
   public $__id = 'fs';
   
   /**@var string Set Amazon Web Services as web-application file service using its class name */
-  public $fileServiceClassName = 'samson\fs\AWSFileService';
+  public $fileServiceClassName = 'samsonphp\fs\AWSFileService';
 
   /** @var string $bucket Aws bucket name */
   public $bucket = '...';

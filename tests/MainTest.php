@@ -1,9 +1,9 @@
 <?php
 namespace tests;
 
-use samson\fs\AWSFileService;
-use samson\fs\FileService;
-use samson\fs\LocalFileService;
+use samsonphp\fs\AWSFileService;
+use samsonphp\fs\FileService;
+use samsonphp\fs\LocalFileService;
 
 /**
  * Created by Vitaly Iegorov <egorov@samsonos.com>
@@ -11,7 +11,7 @@ use samson\fs\LocalFileService;
  */
 class MainTest extends \PHPUnit_Framework_TestCase
 {
-    /** @var \samson\fs\AWSFileService Pointer to file service */
+    /** @var \samsonphp\fs\AWSFileService Pointer to file service */
     public $fileService;
 
     /** @var S3Client AWS mock */
@@ -26,7 +26,7 @@ class MainTest extends \PHPUnit_Framework_TestCase
             ->getMock();
 
         // Get instance using services factory as error will signal other way
-        $this->fileService = new \samson\fs\AWSFileService();
+        $this->fileService = new \samsonphp\fs\AWSFileService();
         $this->fileService->initialize();
         $this->fileService->__construct($this->client);
 
