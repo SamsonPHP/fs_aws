@@ -1,5 +1,5 @@
 {
-	"name":"samsonos/php_fs_aws",
+	"name":"samsonphp/fs_aws",
     "description": "SamsonPHP aws file system service",
     "keywords": [ "file system", "samsonphp"],
     "authors":[
@@ -30,7 +30,7 @@
     "autoload" : {
         "classmap": ["src/"],
         "psr-0": {
-            "samson\\fs\\": "src/"
+            "samsonphp\\fs\\": "src/"
         }
     }
 }
