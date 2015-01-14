@@ -126,4 +126,13 @@ class MainTest extends \PHPUnit_Framework_TestCase
         // Perform test
         $this->assertEquals(true, $this->fileService->isDir('company/'));
     }
+
+    public function testMkDir()
+    {
+        // Try to create dir
+        $result = $this->fileService->mkDir(sys_get_temp_dir().'/testdir/');
+
+        // Always get true as dir creation at AWS is not possible
+        $this->assertEquals(true, $result);
+    }
 }
