@@ -7,6 +7,7 @@ This is abstraction layer over standard PHP file functions.
 [![Build Status](https://travis-ci.org/SamsonPHP/fs_aws.svg?branch=master)](https://travis-ci.org/SamsonPHP/fs_aws)
 [![Code Coverage](https://scrutinizer-ci.com/g/samsonphp/fs_aws/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/samsonphp/fs_aws/?branch=master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/samsonphp/fs_aws/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/samsonphp/fs_aws/?branch=master)
+[![Stories in Ready](https://badge.waffle.io/samsonphp/fs_aws.png?label=ready&title=Ready)](https://waffle.io/samsonphp/fs_aws) 
 [![Total Downloads](https://poser.pugx.org/samsonphp/fs_aws/downloads.svg)](https://packagist.org/packages/samsonphp/fs_aws)
 
 ##Configuration  
