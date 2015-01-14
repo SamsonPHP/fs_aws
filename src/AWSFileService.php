@@ -191,4 +191,15 @@ class AWSFileService extends AbstractFileService
         }
         return $isDir;
     }
+
+    /**
+     * Create catalog in selected location
+     * @param string    $path   Path for new catalog
+     * @return boolean  Result of catalog creating
+     */
+    public function mkDir($path)
+    {
+        // We cannot create folders directly at AWS
+        return true;
+    }
 }
