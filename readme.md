@@ -14,7 +14,7 @@ This is abstraction layer over standard PHP file functions.
 
 This is done using [SamsonPHP configuration system](https://github.com/samsonphp/config)
 
-> In all nested php_fs_* modules which must be build on top of php_fs module all configuration are done to main [samsonphp\fs module](https://github.com/samsonphp/fs)(It's identifier is ```fs```). This configuration class field values will be automatically passed to nested AbstractFileService ancestor.
+> In all nested php_fs_* modules which must be build on top of php_fs module all configuration are done to main [SamsonPHP File service module](https://github.com/samsonphp/fs)(It's identifier is ```fs```). This configuration class field values will be automatically passed to nested AbstractFileService ancestor.
 
 All available configuration fields are:
 ```php
