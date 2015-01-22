@@ -18,11 +18,8 @@ This is done using [SamsonPHP module/service configuration](https://github.com/s
 
 All available configuration fields are:
 ```php
-class FileServiceConfig extends \samson\core\Config 
+class FSConfig extends \samson\core\Config 
 {
-  /**@var string Configured module/service identifier */
-  public $__id = 'fs';
-  
   /**@var string Set Amazon Web Services as web-application file service using its class name */
   public $fileServiceClassName = 'samsonphp\fs\AWSFileService';
 
