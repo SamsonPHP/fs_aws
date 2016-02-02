@@ -34,4 +34,7 @@ class FSConfig extends \samson\core\Config
  
   /** @var string $bucketURL Url of amazon bucket */
   public $bucketURL = '...';
+  
+  /** @var string $region Region of AWS S3 service */
+  public $region = '...';
 }
