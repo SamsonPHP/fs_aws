@@ -31,6 +31,9 @@ class AWSFileService extends AbstractFileService
     /** @var string $bucketURL Url of amazon bucket */
     public $bucketURL;
 
+    /** @var string $region Region of amazon S3 service */
+    public $region;
+
     /** @var int Resource caching age */
     public $maxAge = 1296000;
 
@@ -52,7 +55,8 @@ class AWSFileService extends AbstractFileService
         if (!isset($this->client)) {
             // Use S3 clients, create authorization object and instantiate the S3 client with AWS credentials
             $this->client = S3Client::factory(array(
-                'credentials' => new Credentials($this->accessKey, $this->secretKey)
+                'credentials' => new Credentials($this->accessKey, $this->secretKey),
+                'region' => $this->region
             ));
         }
     }
