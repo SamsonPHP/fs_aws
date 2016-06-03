@@ -34,6 +34,9 @@ class AWSFileService extends AbstractFileService
     /** @var string $region Region of amazon S3 service */
     public $region;
 
+    /** @var string Signature */
+    public $signature = 'v4';
+
     /** @var int Resource caching age */
     public $maxAge = 1296000;
 
@@ -56,7 +59,8 @@ class AWSFileService extends AbstractFileService
             // Use S3 clients, create authorization object and instantiate the S3 client with AWS credentials
             $this->client = S3Client::factory(array(
                 'credentials' => new Credentials($this->accessKey, $this->secretKey),
-                'region' => $this->region
+                'region' => $this->region,
+                'signature' => $this->signature
             ));
         }
     }
